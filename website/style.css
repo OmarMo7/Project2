@@ -1,0 +1,107 @@
+/*This file has been heavily modified to improve the overall UI*/
+
+body {
+    background: #7791c9;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*added classes*/
+.title, #content, #temp, #date{
+    color: #1842a3;
+}
+.entry{
+        background: #36425c;
+        text-align: center;
+        transform: translateY(150px);
+        margin: 0px 400px 0px 400px;
+}
+
+#entryHolder{
+    background: rgba(129, 141, 167, 0.733);
+}
+
+.icon{
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    transform: translate(0px,-15px);
+    margin: 20px 610px 0px 610px;
+    color:#07122b;
+}
+.content{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+nav {
+    /*added*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    transition: .3s;
+    background-color: #36425c;
+}
+label {
+    display: block;
+    font-size: 27px;
+    color: #1842a3;
+}
+input {
+    height: 60px;
+    width: 320px;
+    text-align: center;
+    background: #6289e4;
+    color: #aaaaaa;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+button {
+    width: 250px;
+    height: 90px;
+    position: absolute;
+    cursor: pointer;
+    background: #3b4a6b;
+    color: #6289e4;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    border-radius: 10px;
+    margin: 30px;
+}
+h1 {
+    font-size: 36px;
+}
+textarea {
+    margin: 20px;
+    background: #6289e4;
+    color: #aaaaaa;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Reset style for HTML element on active to have no border*/
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+}
