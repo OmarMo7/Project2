@@ -40,7 +40,7 @@ const updateUI = async () => {
             document.getElementById('temp').innerHTML += '...';
         }
         else{
-            const temp = await fetchData(baseURL, zipCode, apiKey);
+            const temp = await getData(baseURL, zipCode, apiKey);
             document.getElementById('content').innerHTML += content;
             document.getElementById('temp').innerHTML += (temp + ' f');
         }
@@ -78,7 +78,7 @@ const postData = async (url = '', data = {}) => {
 
 
 // Async function to fetch the data
-const fetchData = async (baseURL, zip, key) => {
+const getData = async (baseURL, zip, key) => {
     try {
         const res = await fetch(baseURL + zip + ",us" + "&appid=" + key);
         const data = await res.json();
